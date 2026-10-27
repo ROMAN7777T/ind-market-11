@@ -1,0 +1,25 @@
+[server]
+# The localhost-only binding is passed by start.ps1 / the .bat (--server.address localhost), because
+# hosting services must bind their own address. A copy reached over the network requires a password (terminal/auth.py).
+port = 8501
+# headless avoids Streamlit's first-run "Email:" prompt, which blocks start-up; start.ps1 opens the browser.
+headless = true
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+# Hide Python tracebacks from visitors (they can reveal file paths).
+showErrorDetails = false
+
+[theme]
+base = "dark"
+primaryColor = "#3b82f6"
+backgroundColor = "#0b0f14"
+secondaryBackgroundColor = "#131a22"
+textColor = "#e6edf3"
+font = "sans serif"

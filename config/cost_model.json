@@ -1,0 +1,28 @@
+{
+  "_note": "Default Indian transaction-cost assumptions for research. Rates change with regulation and differ by broker: verify every value against your broker's current charge sheet and the latest NSE/SEBI circulars, then edit this file or the Backtesting Lab inputs. Percentages are of turnover unless stated.",
+  "as_of": "unverified defaults - edit before relying on results",
+  "gst_pct": 18.0,
+  "sebi_fee_per_crore": 10.0,
+  "segments": {
+    "EQ_INTRADAY": {
+      "brokerage_pct": 0.03, "brokerage_max_per_order": 20.0, "brokerage_flat_per_order": null,
+      "stt_buy_pct": 0.0, "stt_sell_pct": 0.025,
+      "exchange_txn_pct": 0.00297, "stamp_buy_pct": 0.003
+    },
+    "EQ_DELIVERY": {
+      "brokerage_pct": 0.0, "brokerage_max_per_order": 20.0, "brokerage_flat_per_order": null,
+      "stt_buy_pct": 0.1, "stt_sell_pct": 0.1,
+      "exchange_txn_pct": 0.00297, "stamp_buy_pct": 0.015
+    },
+    "FUT": {
+      "brokerage_pct": 0.03, "brokerage_max_per_order": 20.0, "brokerage_flat_per_order": null,
+      "stt_buy_pct": 0.0, "stt_sell_pct": 0.02,
+      "exchange_txn_pct": 0.00173, "stamp_buy_pct": 0.002
+    },
+    "OPT": {
+      "brokerage_pct": null, "brokerage_max_per_order": null, "brokerage_flat_per_order": 20.0,
+      "stt_buy_pct": 0.0, "stt_sell_pct": 0.1,
+      "exchange_txn_pct": 0.03503, "stamp_buy_pct": 0.003
+    }
+  }
+}

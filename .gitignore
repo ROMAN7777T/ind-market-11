@@ -1,0 +1,10 @@
+# Never upload secrets, local data or the virtual environment.
+.env
+.streamlit/secrets.toml
+.venv/
+data/
+logs/
+exports/
+__pycache__/
+*.pyc
+.claude/

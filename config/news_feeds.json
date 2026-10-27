@@ -1,0 +1,8 @@
+{
+  "_note": "News feeds are DISABLED by default: nothing is fetched until you enable a feed and press Fetch. Check each source's terms of use before enabling it. 'official' marks exchange/regulator sources. Reachability is not guaranteed: some sites block automated access.",
+  "feeds": [
+    {"name": "SEBI - Press releases & updates", "url": "https://www.sebi.gov.in/sebirss.xml", "publisher": "SEBI", "official": true, "enabled": false, "verified": "unverified"},
+    {"name": "RBI - Press releases", "url": "https://www.rbi.org.in/pressreleases_rss.xml", "publisher": "Reserve Bank of India", "official": true, "enabled": false, "verified": "unverified"},
+    {"name": "NSE - Corporate announcements", "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml", "publisher": "NSE", "official": true, "enabled": false, "verified": "unverified"}
+  ]
+}
